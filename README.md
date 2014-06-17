@@ -1,56 +1,35 @@
-PHP-Xero PHP Wrapper
-====================
+# PHP-Xero PHP Wrapper
 
-No longer maintained
-------------
+This is a fork of an earlier version of the [Xero](http://xero.com) PHP library, mainly forked because the team are no longer maintaining it (see below). I have also added it to [Packagist](https://packagist.org/packages/m1ke/xero) which means it can be installed with [Composer](https://getcomposer.org).
+
+
+### No longer maintained
+
 Please note the PHP-Xero wrapper library is no longer under active development.
 All development effort is going into the [XeroOAuth-PHP library](https://github.com/XeroAPI/XeroOAuth-PHP).
 
-Introduction
-------------
+## Introduction
+
 A class for interacting with the xero (xero.com) private application API.  It could also be used for the public application API too, but it hasn't been tested with that.  More documentation for Xero can be found at http://blog.xero.com/developer/api-overview/  It is suggested you become familiar with the API before using this class, otherwise it may not make much sense to you - http://blog.xero.com/developer/api/
 
 Thanks for the Oauth* classes provided by Andy Smith, find more about them at http://oauth.googlecode.com/.  The
 OAuthSignatureMethod_Xero class was written by me, as required by the Oauth classes.  The ArrayToXML classes were sourced from wwwzealdcom's work as shown on the comment dated August 30, 2009 on this page: http://snipplr.com/view/3491/convert-php-array-to-xml-or-simple-xml-object-if-you-wish/  I made a few minor changes to that code to overcome some bugs.
 
-Requires
---------
+## Requires
+
 PHP5+
 
-Authors
---------
+## Authors
+
 Ronan Quirke, Xero (just very minor bugfixes, vast majority of work done by David Pitman)
 
+Composer package by M1ke
 
-License
--------
-License (applies to Xero and Oauth* classes):
-The MIT License
+## Installation
 
-Copyright (c) 2007 Andy Smith (Oauth* classes)
-Copyright (c) 2010 David Pitman (Xero class)
-Copyright (c) 2012 Ronan Quirke, Xero (Xero class)
+    composer.phar require m1ke/xero
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-Usage
------
+## Usage
 
 Basically instantiate the Xero class with your credentials and desired output format.  Then call any of the methods as outlined in the API.  Calling an API method name as a property is the same as calling that API method with no options. Calling the API method as a method with an array as the only input param with like calling the corresponding POST or PUT API method.  You can make more complex GET requests using up to four params on the method.  If you have read the xero api documentation, it should be clear.
 

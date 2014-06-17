@@ -6,5 +6,6 @@
     },
     "autoload": {
         "classmap": ["Xero.php"]
-    }
+    },
+    "license": "MIT"
 }
