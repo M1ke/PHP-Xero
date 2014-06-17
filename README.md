@@ -15,11 +15,11 @@ A class for interacting with the xero (xero.com) private application API.  It co
 Thanks for the Oauth* classes provided by Andy Smith, find more about them at http://oauth.googlecode.com/.  The
 OAuthSignatureMethod_Xero class was written by me, as required by the Oauth classes.  The ArrayToXML classes were sourced from wwwzealdcom's work as shown on the comment dated August 30, 2009 on this page: http://snipplr.com/view/3491/convert-php-array-to-xml-or-simple-xml-object-if-you-wish/  I made a few minor changes to that code to overcome some bugs.
 
-## Requires
+### Requires
 
 PHP5+
 
-## Authors
+### Authors
 
 Ronan Quirke, Xero (just very minor bugfixes, vast majority of work done by David Pitman)
 
