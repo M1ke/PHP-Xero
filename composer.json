@@ -1,0 +1,10 @@
+{
+    "name": "m1ke/xero",
+    "description": "A fork of the old Xero OAuth private application API",
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "classmap": ["Xero.php"]
+    }
+}
