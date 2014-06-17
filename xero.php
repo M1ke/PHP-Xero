@@ -196,7 +196,7 @@ class Xero {
 				$req  = OAuthRequest::from_consumer_and_token( $this->consumer, $this->token, 'PUT',$xero_url );
 				$req->sign_request($this->signature_method , $this->consumer, $this->token);
 				$xml = $post_body;
-				$fh  = fopen('php://memory', 'w+');
+				$fh  = fopen('php://temp', 'rw+');
 				fwrite($fh, $xml);
 				rewind($fh);
 				$ch = curl_init($req->to_url());
